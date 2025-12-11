@@ -19,7 +19,7 @@ namespace AutoEquip {
     }
 
     //% block="give %item to %entity and equip in slot %slot"
-export function autoEquip(entity: EntitySelector, item: MinecraftItem, slot: ArmorSlot): void {
+export function autoEquip(entity: Entity, item: MinecraftItem, slot: ArmorSlot): void {
     if (!entity) return;
 
     // Give item to inventory not sure if needed, need tests
@@ -41,3 +41,4 @@ export function autoEquip(entity: EntitySelector, item: MinecraftItem, slot: Arm
 }
 
 }
+
