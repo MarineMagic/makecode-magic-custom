@@ -23,7 +23,7 @@ export function autoEquip(entity: Entity, item: MinecraftItem, slot: ArmorSlot):
     if (!entity) return;
 
     // Give item to inventory not sure if needed, need tests
-    entity.addItem(item, 1);
+    //entity.addItem(item, 1);
 
     // slot selected from dropdown
     let slotName = "";
@@ -36,9 +36,10 @@ export function autoEquip(entity: Entity, item: MinecraftItem, slot: ArmorSlot):
     }
 
     // run the command
-    let temp = `replaceitem entity ${entity.name} slot.${slotName} ${item.id} 1`;
+    let temp = `replaceitem entity ${entity.name} slot.${slotName} 1 ${item.id} 1`;
     commands.run(temp);
 }
 
 }
+
 
