@@ -1,0 +1,14 @@
+{
+  "name": "give-equip",
+  "description": "Give items to entities and equip them in specific slots",
+  "dependencies": {
+    "minecraft": "*"
+  },
+  "files": [
+    "custom.ts",
+    "readme.md"
+  ],
+  "targetVersions": {
+    "branch": "stable"
+  }
+}
