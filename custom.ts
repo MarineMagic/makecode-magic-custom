@@ -1,8 +1,3 @@
-/**
- * Give & Equip using commands in MakeCode Minecraft Education
- */
-
-//% color=#00bfff
 namespace AutoEquip {
 
     export enum ArmorSlot {
@@ -19,7 +14,7 @@ namespace AutoEquip {
     }
 
     //% block="give %item to %entity and equip in slot %slot"
-export function autoEquip(entity: Entity, item: MinecraftItem, slot: ArmorSlot): void {
+export function autoEquip(entity: TargetSelector, item: Item, slot: ArmorSlot): void {
         if (!entity) return;
 
     // Give item to inventory not sure if needed, need tests
@@ -36,13 +31,8 @@ export function autoEquip(entity: Entity, item: MinecraftItem, slot: ArmorSlot):
     }
 
     // run the command
-    let temp = `replaceitem entity ${entity.name} slot.${slotName} 1 ${item.id} 1`;
-    commands.run(temp);
+    let temp = `replaceitem entity ${entity} slot.${slotName} 1 ${item} 1`;
+    player.execute(temp);
 }
 
 }
-
-
-
-
-
