@@ -2,11 +2,12 @@
   "name": "magic-custom",
   "description": "testing custom blocs for our classes",
   "dependencies": {
-    "minecraft": "*"
+    "core": "*"
   },
   "files": [
     "custom.ts",
     "readme.md"
   ]
 }
+
 
