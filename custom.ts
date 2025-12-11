@@ -13,7 +13,7 @@ namespace AutoEquip {
         Hand
     }
 
-    //% block="give %item to %entity and equip in slot %slot"
+    //% block="give %entity one %item equipped on %slot"
 export function autoEquip(entity: TargetSelector, item: Item, slot: ArmorSlot): void {
         if (!entity) return;
 
