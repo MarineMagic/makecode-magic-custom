@@ -1,14 +1,12 @@
 {
-  "name": "give-equip",
-  "description": "Give items to entities and equip them in specific slots",
+  "name": "magic-custom",
+  "description": "testing custom blocs for our classes",
   "dependencies": {
     "minecraft": "*"
   },
   "files": [
     "custom.ts",
     "readme.md"
-  ],
-  "targetVersions": {
-    "branch": "stable"
-  }
+  ]
 }
+
